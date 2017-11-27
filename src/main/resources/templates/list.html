@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Twitter</title>
+
+</head>
+<body>
+<a href="/add">Add a Tweet</a><br />
+<div th:each="tw : ${tweets}">
+    <h4 th:inline="text">[[${tw.title}]] @ [[${tw.tweet}]]</h4>
+
+
+</div>
+</body>
+</html>
